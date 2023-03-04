@@ -11,7 +11,7 @@
 
 <body>
     <div class="content">
-        <h1>Descobrir o número de 0 a 100</h1>
+        <h1>Descobrir o número de 0 a 150</h1>
         <input type="number" placeholder="Digite um número" id="bet">
         <button onclick="verifyNumber()">Enviar</button>
     </div>
@@ -25,7 +25,7 @@
         var element = document.getElementById('bet');
         element.value = '';
 
-        numberToFind = parseInt(Math.random() * 100);
+        numberToFind = parseInt(Math.random() * 150);
         vattempts = 0;
 
         console.log('The number to find: ' + numberToFind);
@@ -37,7 +37,7 @@
         var element = document.getElementById('bet');
         var bet = element.value;
 
-        if (bet > 100 || bet < 0) {
+        if (bet > 150 || bet < 0) {
             alert('Aposta inválida');
             return;
         }
